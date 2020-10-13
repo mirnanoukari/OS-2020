@@ -13,8 +13,7 @@ int hits, misses;
 
 int main(int argc, char *argv[]) {
     if (argc <= 1) {
-        fprintf(stderr,
-                "The number of page frames needs to be passed. Exiting.\n");
+        fprintf(stderr,"The number of page frames needs to be passed. Exiting.\n");
         return 1;
     }
 
