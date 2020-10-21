@@ -5,6 +5,7 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <unistd.h>
+#include <linux/limits.h>
 
 // Simple
 
@@ -60,8 +61,8 @@ void print_links(char * dir, ino_t inode) {
 int main() {
     DIR * dirp = opendir("./tmp");
     if (dirp == NULL) return 1;
-
-    char filepath[262];
+    
+    char filepath[PATH_MAX];
     struct stat sdata;
 
     struct dirent * dp;
