@@ -5,9 +5,7 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <unistd.h>
-#include <linux/limits.h>
 
-// Simple
 
 typedef struct int_vector {
     size_t size, used;
@@ -48,7 +46,7 @@ void print_links(char * dir, ino_t inode) {
     DIR * dirp = opendir(dir);
     if (dirp == NULL) return; 
 
-    char filepath[262];
+    char filepath[4097];
     struct stat sdata;
     struct dirent * dp;
     while ((dp = readdir(dirp)) != NULL) {
@@ -62,7 +60,7 @@ int main() {
     DIR * dirp = opendir("./tmp");
     if (dirp == NULL) return 1;
     
-    char filepath[PATH_MAX];
+    char filepath[4097];
     struct stat sdata;
 
     struct dirent * dp;
