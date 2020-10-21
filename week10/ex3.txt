@@ -1,0 +1,16 @@
+chmod ugo-x _ex3.txt
+ ls -l _ex3.txt
+-rw-rw-r-- 1 mirna mirna 0 Oct 20 13:45 _ex3.txt
+
+chmod uo+rwx _ex3.txt
+ ls -l _ex3.txt
+-rwxrw-rwx 1 mirna mirna 0 Oct 20 13:45 _ex3.txt
+
+chmod g=u _ex3.txt
+ ls -l _ex3.txt
+-rwxrwxrwx 1 mirna mirna 0 Oct 20 13:45 _ex3.txt
+
+
+660 means 110 (rw) for owner and group can read and write file, no rights for others.
+775 means rwx for owner and group can read, write and execute file, and rx for others can only read and execute.
+777 means rwx everyone have all the permissions in thi=e file.

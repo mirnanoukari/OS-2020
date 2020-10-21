@@ -1,0 +1,36 @@
+    1  sudo apt-git install
+    2  sudo apt-get install
+    3  sudo apt-get update
+    4  ls 
+    5  touch week1
+    6  ls
+    7  cd week1
+    8  ls
+    9  cd week1
+   10  cd
+   11  cd ..
+   12  ls
+   13  cd mirna
+   14  ls
+   15  cd week1
+   16  rm week1
+   17  cat week1
+   18  mkdir week1
+   19  ls
+   20  cd week1
+   21  mkdir lab1
+   22  cd lab1
+   23  cd ..
+   24  git init
+   25  sudo apt install git
+   26  git init
+   27  ls
+   28  cd week1
+   29  ls
+   30  cd lab1
+   31  touch ex3.sh
+   32  ls
+   33  sh ex3.sg
+   34  sh ex3.sh
+   35  touch ex2.txt
+   36  history > ex2.txt
