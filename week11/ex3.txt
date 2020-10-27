@@ -1,0 +1,3 @@
+In the first code, we have "Hello" printed two times becasue while the "hello" string was in the fork, the buffer was copied and flushed twice.
+
+the second code only one "Hello" is printed following two empty lines because the string "Hello" was flushed from the buffer before the fork, but the empty lines remained.
