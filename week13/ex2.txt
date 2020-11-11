@@ -1,0 +1,5 @@
+Deadlock recovery requires only some preperation and it's the best method in general porpuse operating systems which run an arbitrary code. neverthless, recovery from deadlocks on non-preemptable resources is either dangerous or not effective enough, so it's not as efficient as other methods.
+
+Prevention algorithms ensure that at least one of the necessary conditions (Mutual exclusion, hold and wait, no preemption and circular wait) does not hold true. it is not always possible for general purpose operating system unless all processes are known, this could be a way to prevent deadlocks with the existing system design, without introducing changes.
+
+and last, avoidance requests for any resource to be granted if the resulting state of the system doesn't cause deadlock in the system. Deadlock avoidance algorithm examines the resource allocations so that there can never be a circular wait condition. this is the most fail proof method, but if we are not using it for a special hardware we willl not be able to use it.
